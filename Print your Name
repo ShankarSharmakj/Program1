@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int i, numRepetitions;
+    
+    // Get user input for the name
+    char name[50];  // Assuming a maximum length of 50 characters
+    printf("Enter your name: ");
+    scanf("%s", name);
+
+    // Get user input for the number of repetitions
+    printf("Enter the number of times to print your name: ");
+    scanf("%d", &numRepetitions);
+
+    // Printing the name in a loop
+    for (i = 0; i < numRepetitions; i++) {
+        printf("Name: %s\n", name);
+    }
+
+    return 0;
+}
